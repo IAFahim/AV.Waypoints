@@ -5,14 +5,13 @@ using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 
-[HelpURL("https://github.com/IAFahim/AV.Waypoints")]
-
 namespace AV.Waypoints.Editor
 {
     /// <summary>
     /// Custom property drawer for [Waypoint] attribute.
     /// Provides Vector3 field display in the Inspector.
     /// </summary>
+    [HelpURL("https://github.com/IAFahim/AV.Waypoints")]
     [CustomPropertyDrawer(typeof(WaypointAttribute))]
     public class WaypointAttributeDrawer : PropertyDrawer
     {

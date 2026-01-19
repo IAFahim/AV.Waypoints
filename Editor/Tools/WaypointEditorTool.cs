@@ -11,15 +11,14 @@ using UnityEditor;
 using UnityEditor.EditorTools;
 using UnityEngine;
 
-[HelpURL("https://github.com/IAFahim/AV.Waypoints")]
-[AddComponentMenu("AV/Waypoints/WaypointEditorTool")]
-
 namespace AV.Waypoints.Editor.Tools
 {
     /// <summary>
     /// Unity Editor Tool for visually editing waypoints in the Scene view.
     /// Orchestrates data fetching, logic calls, and rendering using the Data-Logic-Adapter pattern.
     /// </summary>
+    [HelpURL("https://github.com/IAFahim/AV.Waypoints")]
+    [AddComponentMenu("AV/Waypoints/WaypointEditorTool")]
     [EditorTool("Waypoint Elite Tool")]
     public class WaypointEditorTool : EditorTool
     {

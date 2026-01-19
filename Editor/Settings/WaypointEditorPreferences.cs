@@ -2,13 +2,12 @@
 using UnityEditor;
 using UnityEngine;
 
-[HelpURL("https://github.com/IAFahim/AV.Waypoints")]
-
 namespace AV.Waypoints.Editor.Settings
 {
     /// <summary>
     ///     Editor preferences for waypoint tool settings.
     /// </summary>
+    [HelpURL("https://github.com/IAFahim/AV.Waypoints")]
     public static class WaypointEditorPreferences
     {
         private const string PREF_SNAP_ENABLED = "AVWaypoints_SnapEnabled";
