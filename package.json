@@ -2,14 +2,16 @@
   "name": "com.av.waypoints",
   "version": "1.0.0",
   "displayName": "AV Waypoints",
-  "description": "Professional waypoint system with Scene gizmos, Inspector integration, and pathfinding support.",
+  "description": "Professional waypoint editor tooling for Unity. Provides intuitive Scene view handles and inspector integration for editing Vector3 and float3 waypoint fields with visual feedback.",
   "unity": "2021.3",
   "keywords": [
     "waypoints",
+    "editor",
+    "tools",
     "pathfinding",
     "patrol",
     "navigation",
-    "editor-tools"
+    "scene-view"
   ],
   "author": {
     "name": "IAFahim",
@@ -24,13 +26,7 @@
     {
       "displayName": "Basic Waypoint Usage",
       "description": "Simple example scene demonstrating waypoint editing",
-      "path": "Samples~"
+      "path": "~Samples"
     }
-  ],
-  "category": "Editor Extensions",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/IAFahim/AV.Waypoints"
-  },
-  "licensesUrl": "https://github.com/IAFahim/AV.Waypoints/blob/main/LICENSE.md"
+  ]
 }

@@ -1,0 +1,4 @@
+{
+	"name": "AV.Waypoint.Sample.Script.Runtime",
+	"references":[ "GUID:4b9b420a021116900873d48a599de3b1" ]
+}

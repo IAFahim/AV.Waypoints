@@ -14,7 +14,6 @@ namespace AV.Waypoints.Editor.Core
     {
         public const float SnapThreshold = 0.001f;
         public const float Epsilon = 0.000001f;
-        public const float EpsilonSquared = Epsilon * Epsilon;
 
         /// <summary>
         /// Transforms a position from local space to world space using the provided matrix.
@@ -60,8 +59,7 @@ namespace AV.Waypoints.Editor.Core
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void IsApproximatelyEqual(in float3 positionA, in float3 positionB, out bool areEqual)
         {
-            // Compare squared distance against squared epsilon (LOGIC FIX)
-            areEqual = math.distancesq(positionA, positionB) < EpsilonSquared;
+            areEqual = math.distancesq(positionA, positionB) < Epsilon;
         }
 
         /// <summary>

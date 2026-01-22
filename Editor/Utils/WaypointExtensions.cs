@@ -54,8 +54,8 @@ namespace AV.Waypoints.Editor.Utils
 
                 if (accumulatedDistance + segmentDistance >= targetDistance)
                 {
-                    var normalizedTime = (targetDistance - accumulatedDistance) / segmentDistance;
-                    return Vector3.Lerp(waypoints[i], waypoints[i + 1], normalizedTime);
+                    var t = (targetDistance - accumulatedDistance) / segmentDistance;
+                    return Vector3.Lerp(waypoints[i], waypoints[i + 1], t);
                 }
 
                 accumulatedDistance += segmentDistance;

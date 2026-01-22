@@ -1,17 +1,13 @@
-# Unity generated / built files
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Mm]emoryCaptures/
+# Unity generated meta files
+*.meta
 
-# Visual Studio cache / option files
-.vs/
-
-# Rider
-.idea/
-
-# macOS
+# OS files
 .DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.suo
+*.user
+*.sln.docstates

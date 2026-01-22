@@ -7,7 +7,6 @@ namespace AV.Waypoints.Runtime
     /// Marks a Vector3 or float3 field for waypoint editing in the Scene view.
     /// Supports individual fields, arrays, and lists.
     /// </summary>
-    [HelpURL("https://github.com/IAFahim/AV.Waypoints")]
     [AttributeUsage(AttributeTargets.Field)]
     public class WaypointAttribute : PropertyAttribute
     {

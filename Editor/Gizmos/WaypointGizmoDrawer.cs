@@ -16,10 +16,6 @@ namespace AV.Waypoints.Editor.Gizmos
     [InitializeOnLoad]
     public static class WaypointGizmoDrawer
     {
-        // Gizmo rendering settings
-        private const float SphereHandleSize = 0.2f;
-        private const float DottedLineSpacing = 3f;
-
         private static readonly Color GizmoColor = new(1f, 0.92f, 0.016f, 0.3f);
         private static readonly Color GizmoLineColor = new(1f, 0.92f, 0.016f, 0.15f);
 
@@ -79,7 +75,7 @@ namespace AV.Waypoints.Editor.Gizmos
             var worldPos = matrix.MultiplyPoint3x4(localPos);
 
             Handles.color = color;
-            Handles.SphereHandleCap(0, worldPos, Quaternion.identity, SphereHandleSize * HandleUtility.GetHandleSize(worldPos),
+            Handles.SphereHandleCap(0, worldPos, Quaternion.identity, 0.2f * HandleUtility.GetHandleSize(worldPos),
                 EventType.Repaint);
         }
 
@@ -94,13 +90,13 @@ namespace AV.Waypoints.Editor.Gizmos
                 var worldPos = matrix.MultiplyPoint3x4(localPositions[i]);
 
                 Handles.color = color;
-                Handles.SphereHandleCap(0, worldPos, Quaternion.identity, SphereHandleSize * HandleUtility.GetHandleSize(worldPos),
+                Handles.SphereHandleCap(0, worldPos, Quaternion.identity, 0.2f * HandleUtility.GetHandleSize(worldPos),
                     EventType.Repaint);
 
                 if (i > 0)
                 {
                     Handles.color = new Color(color.r, color.g, color.b, 0.15f);
-                    Handles.DrawDottedLine(previousWorld, worldPos, DottedLineSpacing);
+                    Handles.DrawDottedLine(previousWorld, worldPos, 3f);
                 }
 
                 previousWorld = worldPos;

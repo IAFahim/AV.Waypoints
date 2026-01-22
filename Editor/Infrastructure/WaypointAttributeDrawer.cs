@@ -11,7 +11,6 @@ namespace AV.Waypoints.Editor
     /// Custom property drawer for [Waypoint] attribute.
     /// Provides Vector3 field display in the Inspector.
     /// </summary>
-    [HelpURL("https://github.com/IAFahim/AV.Waypoints")]
     [CustomPropertyDrawer(typeof(WaypointAttribute))]
     public class WaypointAttributeDrawer : PropertyDrawer
     {
