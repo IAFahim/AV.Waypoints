@@ -1,0 +1,13 @@
+# Unity generated meta files
+*.meta
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
