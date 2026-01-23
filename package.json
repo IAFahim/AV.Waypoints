@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "displayName": "AV Waypoints",
   "description": "Professional waypoint editor tooling for Unity. Provides intuitive Scene view handles and inspector integration for editing Vector3 and float3 waypoint fields with visual feedback.",
-  "unity": "2021.3",
+  "unity": "2022.3",
   "keywords": [
     "waypoints",
     "editor",
@@ -29,5 +29,8 @@
       "path": "Samples~"
     }
   ],
-  "_fingerprint": "fb6098571445c040bc55d371602e39ae123df32a"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAFahim/AV.Waypoints"
+  }
 }
