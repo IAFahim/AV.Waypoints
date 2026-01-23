@@ -2,7 +2,7 @@
     "name": "AV.Waypoint.Sample.Script.Runtime",
     "rootNamespace": "",
     "references": [
-        "GUID:f3cafe9935159d1a6927c18059425592"
+        "GUID:4b9b420a021116900873d48a599de3b1"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -128,34 +128,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 47046167}
-  - component: {fileID: 47046166}
+  - component: {fileID: 47046168}
   m_Layer: 0
-  m_Name: Waypoint
+  m_Name: AV.Waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &47046166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47046165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c2f533ad333d597fa4f645358c3c1a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: AV.Waypoints.Runtime::PatrolPath
-  SpawnPoint:
-    x: 2
-    y: 0
-    z: 1.2248306
-  ExitPoint: {x: -1.55, y: 0, z: 2.3639278}
-  ExitPoints:
-  - {x: 2.4935725, y: 0, z: -1.038528}
-  PatrolRoute: []
 --- !u!4 &47046167
 Transform:
   m_ObjectHideFlags: 0
@@ -171,6 +151,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &47046168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47046165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e571678dbd2cf65409448b7d51068e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AV.Waypoint.Sample.Script.Runtime::AV.Waypoints.Samples.Runtime.PatrolPath
+  spawnPoint: {x: 0, y: 0, z: 0}
+  exitPoint: {x: 0, y: 0, z: 10}
+  exitPoints: []
+  patrolRoute: []
+  showConnections: 1
+  handleSize: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

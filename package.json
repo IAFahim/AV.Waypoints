@@ -26,7 +26,7 @@
     {
       "displayName": "Basic Waypoint Usage",
       "description": "Simple example scene demonstrating waypoint editing",
-      "path": "~Samples"
+      "path": "Samples~"
     }
   ],
   "_fingerprint": "fb6098571445c040bc55d371602e39ae123df32a"
